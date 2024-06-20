@@ -17,6 +17,7 @@ class ProductConsumer < ApplicationConsumer
         name: params[:name],
         brand: params[:brand],
         price: params[:price],
+        stock: params[:stock],
         description: params[:description],
         updated_at: params[:updated_at]
       )

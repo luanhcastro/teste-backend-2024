@@ -17,6 +17,7 @@ module Services
               product.id        ||= params[:id]           if params[:id].present?
               product.name        = params[:name]         if params[:name].present?
               product.brand       = params[:brand]        if params[:brand].present?
+              product.stock       = params[:stock]        if params[:stock].present?
               product.price       = params[:price]        if params[:price].present?
               product.description = params[:description]  if params[:description].present?
 
