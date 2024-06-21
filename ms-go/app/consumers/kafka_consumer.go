@@ -15,7 +15,7 @@ import (
 
 func main() {
 	r := kafka.NewReader(kafka.ReaderConfig{
-		Brokers: []string{"localhost:9092"},
+		Brokers: []string{"kafka:29092"},
 		Topic:   "rails-to-go",
 		GroupID: "go-consumer-group",
 	})

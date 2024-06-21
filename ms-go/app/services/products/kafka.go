@@ -11,7 +11,7 @@ import (
 
 func sendMessageToKafka(product models.Product) error {
 	writer := kafka.Writer{
-		Addr:     kafka.TCP("localhost:9092"),
+		Addr:     kafka.TCP("kafka:29092"),
 		Topic:    "go-to-rails",
 		Balancer: &kafka.LeastBytes{},
 	}
